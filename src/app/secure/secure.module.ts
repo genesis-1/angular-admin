@@ -19,6 +19,9 @@ import { ProductCreateComponent } from './products/product-create/product-create
 import { UploadComponent } from './components/upload/upload.component';
 import { ProductEditComponent } from './products/product-edit/product-edit.component';
 import { OrdersComponent } from './orders/orders.component';
+import { HomeComponent } from '../public/Home/Home.component';
+import { ApplicationComponent } from '../public/application/application.component';
+import { ControlMessages } from './components/controlMessages/controlMessages.component';
 
 
 @NgModule({
@@ -39,7 +42,10 @@ import { OrdersComponent } from './orders/orders.component';
     ProductCreateComponent,
     UploadComponent,
     ProductEditComponent,
-    OrdersComponent
+    OrdersComponent,
+    HomeComponent,
+    ApplicationComponent,
+    ControlMessages
   ],
   exports: [
     SecureComponent

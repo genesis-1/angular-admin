@@ -16,6 +16,8 @@ import {ProductsComponent} from './secure/products/products.component';
 import {ProductCreateComponent} from './secure/products/product-create/product-create.component';
 import {ProductEditComponent} from './secure/products/product-edit/product-edit.component';
 import {OrdersComponent} from './secure/orders/orders.component';
+import { HomeComponent } from './public/Home/Home.component';
+import { ApplicationComponent } from './public/application/application.component';
 
 const routes: Routes = [
   {
@@ -34,8 +36,8 @@ const routes: Routes = [
       {path: 'products', component: ProductsComponent},
       {path: 'products/create', component: ProductCreateComponent},
       {path: 'products/:id/edit', component: ProductEditComponent},
-      {path: 'orders', component: OrdersComponent},
-    ]
+      {path: 'orders', component: OrdersComponent} 
+        ]
   },
   {
     path: '',
@@ -43,6 +45,8 @@ const routes: Routes = [
     children: [
       {path: 'login', component: LoginComponent},
       {path: 'register', component: RegisterComponent},
+      {path: 'home', component: HomeComponent},
+      {path: 'apply', component: ApplicationComponent},
     ]
   },
 ];
